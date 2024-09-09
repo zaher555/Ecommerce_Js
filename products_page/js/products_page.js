@@ -172,18 +172,18 @@ function addToCrt(productID)
 }
 /***********************************************************************to top*********************************************************************************/
 var topArrow=document.getElementById('topArrow');
-window.onscroll=function(){
-    checkScroll();
-}
+// window.onscroll=function(){
+//     checkScroll();
+// }
 function toTop()
 {
     window.scrollTo(top)
 }
-function checkScroll()
-{
-    if (document.documentElement.scrollTop > 20) {
-        topArrow.style.display = "block";
-      } else {
-        topArrow.style.display = "none";
-      }
-}
+// function checkScroll()
+// {
+//     if (document.documentElement.scrollTop > 20) {
+//         topArrow.style.display = "block";
+//       } else {
+//         topArrow.style.display = "none";
+//       }
+// }

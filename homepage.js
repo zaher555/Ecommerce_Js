@@ -6,23 +6,23 @@ function logout()
     logoutLink.style.display='none'
 }
 /*********************************************************************slider****************************************************************************/
-var imgSlider=document.getElementById('img-slider');
-var imageSrc=['../images/pexels-lastly-699122.jpg','../images/pexels-karolina-grabowska-8092507.jpg','../images/pexels-nietjuh-934070.jpg','../images/pexels-sora-shimazaki-5926460.jpg']
-window.onload=function()
-{
-    var i=0;
-    var interval=setInterval(function(){
-        i++;
-        if(i==imageSrc.length)
-        {
-            i=0;
-            imgSlider.setAttribute('src',imageSrc[i]);
-        }
-        else
-        {
-            imgSlider.setAttribute('src',imageSrc[i]);
-        }
-    },3000)
+// var imgSlider=document.getElementById('img-slider');
+// var imageSrc=['images/pexels-lastly-699122.jpg','images/pexels-karolina-grabowska-8092507.jpg','images/pexels-nietjuh-934070.jpg','images/pexels-sora-shimazaki-5926460.jpg']
+// window.onload=function()
+// {
+//     var i=0;
+//     var interval=setInterval(function(){
+//         i++;
+//         if(i==imageSrc.length)
+//         {
+//             i=0;
+//             imgSlider.setAttribute('src',imageSrc[i]);
+//         }
+//         else
+//         {
+//             imgSlider.setAttribute('src',imageSrc[i]);
+//         }
+//     },3000)
     /********************************************************************cart counter******************************************************************************************/
     var cartCounter=document.getElementById('counter');
     let cart=JSON.parse(localStorage.getItem("cart")) || [];
@@ -37,9 +37,9 @@ window.onload=function()
     }
     else
     {
-        logoutLink.style.display='none'
+        // logoutLink.style.display='none'
     }
-}
+// }
 /***********************************************************************to top*********************************************************************************/
 var topArrow=document.getElementById('topArrow');
 window.onscroll=function(){
