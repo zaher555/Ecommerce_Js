@@ -1,0 +1,64 @@
+html
+{
+    scroll-behavior:smooth;
+}
+body
+{
+    position: relative;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root
+{
+    --main-color:#3e3ecf;
+}
+/*************************************************************start header****************************************************************************/
+nav .logo
+{
+    width: 50px; 
+}
+nav .cart a
+{
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a:hover
+{
+    color: var(--main-color);
+}
+nav .cart span
+{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    background-color:#198754;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    align-items: center;
+    justify-content: center;
+    left: 22px;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+}
+/*************************************************************start product-details******************************************************************/
+.card span
+{
+    font-weight: bolder;
+}
+/*************************************************************start footer*******************************************************************/
+footer
+{
+    width: 101%;
+}
+
