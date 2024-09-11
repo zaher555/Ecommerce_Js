@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="../css/signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <form action="../../home_page/html/homepage.html">
-            <i class="fa-solid fa-user"></i>
-            <h1>sign up</h1>
-            <div class="name">
+            <i class="fa-solid fa-user mt-5 d-block"></i>
+            <h1>Sign Up</h1>
+            <div class="form-group name">
                 <input type="text" id="name" name="name" placeholder="Enter Your Name">
                 <span id="nameError">Name is required</span>
             </div>
-            <div class="phone">
+            <div class="form-group phone">
                 <input type="text" id="phone" name="phone" placeholder="Enter Your Phone">
                 <span id="phoneError">Phone is required</span>
             </div>
-            <div class="email">
+            <div class="form-group email">
                 <input type="email" id="email" name="email" placeholder="Enter Your Email">
                 <span id="emailError">Email is required</span>
             </div>
-            <div class="password">
+            <div class="form-group password">
                 <input type="password" id="password" placeholder="Enter Your Password">
                 <span id="passwordError">Password is required</span>
             </div>
-            <div class="password-confirm">
+            <div class="form-group password-confirm">
                 <input type="password" id="password-confirm" placeholder="Confirm Your Password">
                 <span id="confirmationError">Password confirmation is required</span>
             </div>
-            <input type="submit" value="signup" id="sumitBtn">
+            <input type="submit" value="Sign Up" id="submitBtn">
         </form>
-        <a href="../../login_page/html/login.html">Already Have Email</a>
+        <a href="../../login_page/html/login.html">Already Have An Account? Log In</a>
     </div>
     <script src="../js/signup.js"></script>
 </body>

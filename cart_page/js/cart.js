@@ -117,8 +117,8 @@ function removeProduct(productID)
         {
             cartContent.innerHTML=``;
             cartContent.innerHTML=`<h1>card is empty</h1>
-<img src="../../images/vecteezy_shopping-cart-icon-shopping-basket-on-transparent_19787018.png"/>
-                               <a href="../../products_page/html/products_page.html" class="back btn btn-success d-block pt-3 pb-3 mt-5 w-25 ms-auto me-auto">Back To Shopping</a>`
+            <img src="../../images/vecteezy_shopping-cart-icon-shopping-basket-on-transparent_19787018.png"/>
+            <a href="../../products_page/html/products_page.html" class="back btn btn-success d-block pt-3 pb-3 mt-5 w-25 ms-auto me-auto">Back To Shopping</a>`
         }
         var input=document.getElementsByClassName('quantity');
         var btn=document.getElementsByClassName('increaseBtn');

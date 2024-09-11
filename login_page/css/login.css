@@ -1,114 +1,118 @@
-html
-{
-    height: 100%;
-}
-body
-{
-    background-image: linear-gradient(to right, #40c9ff, #e81cff);
-    height: 100%;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
-*
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: black;
-}
-.container
-{
-    background-color: white;
-    width: 30%;
-    margin: auto;
-    border-radius: 16px;
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
     text-align: center;
-    padding: 66px 0px;
-    box-shadow: 10px 10px 20px 0px #a1a1a1
 }
-.container i
-{
-    font-size: 80px;
+
+form {
+    display: flex;
+    flex-direction: column;
 }
-.container h1
-{
-    font-size: 60px;
-    font-family: sans-serif;
-    text-transform: capitalize;
+
+form i {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
 }
-.container p
-{
-    margin: auto;
-    font-size: 13px;
-    width: 35%;
-    color: #9d9d9d;
-    ;
-    text-transform: capitalize;
-    font-weight: bolder;
-    font-family: system-ui;
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
 }
-.container form > div
-{
+
+form p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-group input {
     width: 100%;
-    margin-top: 8%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-.container .email #email
-{
-    width: 83%;
-    padding: 20px 15px;
-    border: none;
-    background-color: #f3f3f3;
-    border-radius: 12px;
-    outline: none;
-}
-.container .password #password
-{
-    width: 83%;
-    padding: 20px 15px;
-    border: none;
-    background-color: #f3f3f3;
-    border-radius: 12px;
-    outline: none;
-}
-.container .password-confirm #password-confirm
-{
-    width: 83%;
-    padding: 20px 15px;
-    border: none;
-    background-color: #f3f3f3;
-    border-radius: 12px;
-    outline: none;
-}
-.container input[type="submit"]
-{
-    width: 47%;
-    padding: 15px 40px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    margin-top: 9%;
-    font-size: 22px;
-    background-image: linear-gradient(to right, #40c9ff, #e81cff);
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    margin-left: 26%;
-}
-span
-{
-    width: 100%;
-    display: none;
+
+.form-group span {
     color: red;
-    text-align: start;
-    margin: 10px 0px 0px 60px;
-    text-transform: capitalize;
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
 }
-a
-{
-    color: #03A9F4;
+
+.form-group.error span {
     display: block;
-    padding-top: 6%;
+}
+
+#loginBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#loginBtn:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
     text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form i {
+        font-size: 36px;
+    }
+
+    form h1 {
+        font-size: 20px;
+    }
+
+    #loginBtn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .form-group input {
+        padding: 8px;
+    }
 }

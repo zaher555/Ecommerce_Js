@@ -93,6 +93,14 @@ nav .cart span
 {
     font-weight: bolder;
 }
+@media(max-width:576px)
+{
+    a.back
+    {
+        width: 70% !important;
+    }
+}
+
 footer
 {
     width: 101%;

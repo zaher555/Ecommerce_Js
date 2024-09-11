@@ -58,7 +58,6 @@ nav .cart span
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100%; */
     background-image: url('https://t3.ftcdn.net/jpg/03/37/39/32/240_F_337393268_OB0LenPmWcNidFFeIxZPYkQGn6tykhtz.jpg');
 }
 .landing::after
